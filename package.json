@@ -1,0 +1,12 @@
+{
+  "name": "cc_genbackend_team_126",
+  "version": "1.0.0",
+  "description": "Server-side application for Credit Card Design Library by Zuri Team 126. ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Backend Team 126",
+  "license": "ISC"
+}
