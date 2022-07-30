@@ -10,3 +10,7 @@ This project seeks to erect a library of Credit Card Designs. This platform woul
 NodeJS
 
 # Backend Contributors
+# Important links 
+ - Documentation link[https://documenter.getpostman.com/view/15118089/UzdxzSKA]
+ - Figma link [https://www.figma.com/file/9tKha8H6lvfgoGXTE9R8hF/project-cc_gen]
+ - Frontend repository link [https://github.com/zuri-training/cc-gen_team128_frontend]
