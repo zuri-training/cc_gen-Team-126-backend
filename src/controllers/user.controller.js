@@ -15,10 +15,12 @@ const signUpUser = (req, res) => {
 
   const data = req.body;
   data.password = hashPassword(data.password);
-  data.token = generateOTP();
+  // data.token = generateOTP();
   const user = new User(data);
   try {
     user.save().then((result) => {
+      const token = jwt.sign({ _id: result._id }, process.env.TOKEN_SECRET);
+      res.set('auth-token', token);
       return res.status(201).json({
         message: 'Registration successful.',
         data: {
@@ -26,10 +28,13 @@ const signUpUser = (req, res) => {
           email: result.email,
           verified: result.emailVerified,
           created_at: result.createdAt,
+          token,
         },
       });
     });
   } catch (err) {
+    // const token = jwt.sign({ _id: data.user_id }, process.env.TOKEN_SECRET);
+
     res
       .status(400)
       .json({ message: 'An Error occurred! Registration unsuccessful' });
