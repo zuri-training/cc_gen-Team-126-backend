@@ -26,7 +26,7 @@ const userSchema = new mongoose.Schema(
       type: Boolean,
       default: false,
     },
-    token: { type: String },
+    otp: { type: String },
   },
   { timestamps: true }
 );
