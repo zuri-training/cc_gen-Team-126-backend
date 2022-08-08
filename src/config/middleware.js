@@ -44,24 +44,14 @@ const sendEmail = async (params) => {
     let info = await transporter.sendMail({
       from: process.env.MAIL_USERNAME, // Sender's address
       to: params.email, // Receiver's address list
-      subject: "Welcome to Zuri's CC Gen", // Subject line
-      html: `
-            <div
-                class="container"
-                style="max-width: 90%; margin: auto; padding-top: 20px"
-            >
-                <h2>Registration Successful</h2>
-                <h4>Verify Your Email by clicking on the link bellow</h4>
-                <p style="margin-bottom: 30px;">Please enter the sign up OTP to get started</p>
-                <h1 style="font-size: 40px; letter-spacing: 2px; text-align:center;">http://localhost:3000/api/auth/verify-email/${params.otp}</h1>
-                <p style="margin-top:50px;">If you did not signup on Zuri's CC Gen, please kindly ignore this mail.</p>
-            </div>
-            `,
+      subject: params.subject, // Subject line
+      html: params.template
     });
-    return [true, info];
+    console.log(info);
+    return info;
   } catch (error) {
     console.log(error);
-    return [false, null];
+    return false;
   }
 };
 
