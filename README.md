@@ -19,6 +19,15 @@ NodeJS
 - Install all needful dependencies by running the `npm install` script.
 - Run `npm start` to kickstart application.
 
+-- config (project wide configurations)
+-- tests (all tests are here)
+-- src
+---- controllers ( web controllers - they decide what happens with api requests )
+---- services ( core logic )
+---- repository ( Data access layer (or sort of). Used typeorm's custom repositories )
+---- migrations ( database migrations )
+
+
 # Backend Contributors
 
 ## Ayooluwa Adeleke
