@@ -12,11 +12,12 @@ NodeJS
 
 # Installation Setup
 
-- Install NodeJS[https://nodejs.org/en/download/]
+- Install [NodeJS](https://nodejs.org/en/download/) into your local machine if you haven't.
 - Clone Repository
-- Create a `.env` file by running `touch.env`
+- Create a `.env` file by running `touch.env` on a Linux/ iTerminal.
 - Copy fields from `.env.example` and replace with appropriate fields.
 - Install all needful dependencies by running the `npm install` script.
+- Run `npm start` to kickstart application.
 
 # Backend Contributors
 
