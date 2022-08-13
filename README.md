@@ -28,6 +28,6 @@ NodeJS
 
 # Useful links
 
-- Postman Documentation [https://documenter.getpostman.com/view/15118089/UzdxzSKA]
-- Figma link [https://www.figma.com/file/9tKha8H6lvfgoGXTE9R8hF/project-cc_gen]
-- Frontend repository link [https://github.com/zuri-training/cc_gen-Team-126-frontend]
+- [Postman API Documentation](https://documenter.getpostman.com/view/15118089/UzdxzSKA)
+- [Figma link](https://www.figma.com/file/9tKha8H6lvfgoGXTE9R8hF/project-cc_gen)
+- [Frontend repository link](https://github.com/zuri-training/cc_gen-Team-126-frontend)
