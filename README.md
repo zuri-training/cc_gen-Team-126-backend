@@ -19,14 +19,12 @@ NodeJS
 - Install all needful dependencies by running the `npm install` script.
 - Run `npm start` to kickstart application.
 
--- config (project wide configurations)
--- tests (all tests are here)
--- src
----- controllers ( web controllers - they decide what happens with api requests )
----- services ( core logic )
----- repository ( Data access layer (or sort of). Used typeorm's custom repositories )
----- migrations ( database migrations )
-
+`-- src`
+`----- config`
+`----- controllers ( web controllers - they decide what happens with api requests )`
+`----- models`
+`----- routes`
+`----- index.js`
 
 # Backend Contributors
 
@@ -41,3 +39,7 @@ NodeJS
 - [Postman API Documentation](https://documenter.getpostman.com/view/15118089/UzdxzSKA)
 - [Figma link](https://www.figma.com/file/9tKha8H6lvfgoGXTE9R8hF/project-cc_gen)
 - [Frontend repository link](https://github.com/zuri-training/cc_gen-Team-126-frontend)
+
+```
+
+```
