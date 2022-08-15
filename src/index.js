@@ -9,7 +9,10 @@ app.use(json());
 app.use('/api/auth', require('./routes/user.routes'));
 const APP_PORT = process.env.PORT;
 app.get('/', (req, res) => {
-  res.json({ msg: "Here's the Home page of the World class App" });
+  res.json({
+    msg:
+      "Here's the Home page of Zuri X I4G Team 126 Project CC_Gen the World class App",
+  });
 });
 connect();
 
